@@ -8,5 +8,8 @@ openpyxl
 requests
 pymongo
 python-dotenv
-streamlit
 google-auth-oauthlib
+fastapi[all]
+python-jose[cryptography]
+pypdf
+python-multipart
