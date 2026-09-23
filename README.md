@@ -213,6 +213,4 @@ ollama list
 
 Confirm that MongoDB is reachable at `MONGO_URI` and that the configured user has permission to create collections and indexes.
 
-## License
 
-No license has been added yet. Add one before distributing or accepting external contributions.
