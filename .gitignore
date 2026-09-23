@@ -11,6 +11,8 @@ wheels/
 
 # Environment secrets
 .env
+.env.*
+!.env.example
 
 # Generated data files
 user_profile.json
@@ -18,3 +20,7 @@ coach_conversations.json
 daily_log.xlsx
 coach_notes.txt
 tomorrow_plan.txt
+
+# Local/private project data
+my_day.txt
+project_cv/

@@ -16,7 +16,7 @@ def build_executor(log_content: str, profile: UserProfile) -> AgentExecutor:
     llm = ChatOllama(
         model=MODEL,
         streaming=True,
-        num_ctx=2048,
+        num_ctx=32768,
         num_thread=max(1, os.cpu_count() - 1),
     )
     all_tools = tools_list + make_profile_tools(profile)

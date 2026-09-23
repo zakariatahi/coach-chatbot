@@ -419,14 +419,14 @@ def main():
     #
     # Change the model name below to whatever you have pulled in Ollama.
     # ─────────────────────────────────────────────────────────────────────
-    MODEL = "gemma4:e2b"
+    MODEL = os.getenv("OLLAMA_MODEL", "gemma4:e2b")
 
     llm = ChatOllama(
         model=MODEL,
         streaming=True,
         callbacks=[handler],
         # These reduce CPU memory pressure and improve throughput:
-        num_ctx=2048,       # smaller context window = less RAM, faster prefill
+        num_ctx=32768,      # increased context window to read whole context
         num_thread=max(1, os.cpu_count() - 1),  # leave 1 core for the OS
     )
 

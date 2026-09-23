@@ -13,3 +13,4 @@ fastapi[all]
 python-jose[cryptography]
 pypdf
 python-multipart
+langchain-openai

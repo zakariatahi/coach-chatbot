@@ -126,7 +126,7 @@ def find_or_create_user(username: str) -> str:
         "username":   username,
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
-    print(f"✅ New account created for '{username}' (id: {user_id[:8]}…)")
+    print(f"[OK] New account created for '{username}' (id: {user_id[:8]}…)")
     return user_id
 
 
