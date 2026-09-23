@@ -4,9 +4,17 @@ COACH AI is a private, locally powered personal productivity coach. Users sign i
 
 ## Screenshots
 
-| Desktop | Compact layout |
-| --- | --- |
-| ![COACH AI desktop login](docs/screenshots/login-desktop.png) | ![COACH AI compact login](docs/screenshots/login-compact.png) |
+### Google sign in
+
+![COACH AI Google sign-in screen](docs/screenshots/coach-ai-login.png)
+
+### Chat interface
+
+![COACH AI chat interface showing a conversation and chat history](docs/screenshots/coach-ai-chat.png)
+
+### MongoDB collections
+
+![MongoDB Compass showing the conversations, oauth_pkce, and users collections](docs/screenshots/mongodb-collections.png)
 
 ## Features
 
